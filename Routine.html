@@ -1,0 +1,245 @@
+<!DOCTYPE html>
+<html>
+<head>
+   
+    <title>My Class Routine</title>
+
+
+
+        <style>
+        
+        #page-title {
+            text-align: center;
+            color: darkgreen;
+            font-size: 28px;
+        }
+
+       
+        .center {
+            text-align: center;
+        }
+
+        
+    
+
+        table, th, td {
+            border: 1px solid;
+            border-collapse: collapse;
+        }
+
+        th, td {
+            padding: 8px;
+            
+        }
+
+        th {
+            background-color: lightgreen;
+        }
+
+    
+        tbody tr:hover {
+            background-color: khaki;
+        }
+
+
+        .lab {
+            font-weight: bold;
+            color: darkred;
+        }
+
+
+ 
+        input[type="text"] {
+            border: 2px solid green;
+            padding: 7px;
+            box-sizing: border-box;
+            width: 100%;
+        }
+
+    
+    </style>
+
+
+
+</head>
+
+
+<body>
+    
+    <h1 id="page-title">Weekly Class Routine</h1>
+<p>
+
+
+    <img class;
+            src="https://img.magnific.com/free-vector/daily-activity-man-hands-up-coffee-clock-bed_24908-58956.jpg?semt=ais_hybrid&w=740&q=80"
+            alt="University students on a campus"
+            title="University Campus"
+            width="400"
+            height="220">
+</p>
+
+<h2>My Weekly Schedule</h2>
+
+<table>
+        
+            <tr>
+                <th colspan="4">Class Schedule - Fall 2026</th>
+            </tr>
+        
+
+            <tr>
+                <th>Day</th>
+                <th>Time</th>
+                <th>Course</th>
+                <th>Room</th>
+            </tr>
+       
+
+       
+            <tr>
+                <td rowspan="2">Sunday</td>
+                <td>08:30 AM</td>
+                <td>Web Technologies (Theory)</td>
+                <td> 3111</td>
+            </tr>
+
+            <tr>
+                <td>10:00 AM</td>
+                <td class="lab">Web Technologies (Lab)</td>
+                <td> D123 </td>
+            </tr>
+
+            <tr>
+                <td>Tuesday</td>
+                <td>02:40 PM</td>
+                <td>TOC</td>
+                <td> 3111</td>
+            </tr>
+
+            <tr>
+                <td>Thursday</td>
+                <td>11:00 AM</td>
+                <td>OOP2 </td>
+                <td> 9302</td>
+            </tr>
+        
+    </table>
+
+<br><br>
+
+    <form action="" method="post">
+
+        <fieldset>
+            <legend>Class Feedback</legend>
+
+           
+            <label for="full-name">Full Name:</label>
+            <input
+                type="text"
+                id="full-name"
+                name="full_name"
+                minlength="3"
+                required>
+
+                <br><br>
+            
+            <label for="email">Email:</label>
+            <input
+                type="email"
+                id="email"
+                name="email"
+                required>
+
+                <br><br>
+
+           
+            <label for="class-date">Class Date:</label>
+            <input
+                type="date"
+                id="class-date"
+                name="class_date"
+                required>
+
+                <br><br>
+
+            
+            <label for="course">Course:</label>
+            <input
+                type="text"
+                id="course"
+                name="course"
+                list="course-options"
+                required>
+
+            <datalist id="course-options">
+                <option value="Web Technologies"></option>
+                <option value="Theory of Computation"></option>
+                <option value="Object Oriented Programming"></option>
+            </datalist>
+
+            <br><br>
+
+            
+            <label for="rating">Rating (1-5):</label>
+            <input
+                type="number"
+                id="rating"
+                name="rating"
+                min="1"
+                max="5"
+                required>
+
+                <br><br>
+
+            
+            <p>Class Type:</p>
+
+            <input
+                type="radio"
+                id="theory"
+                name="class_type"
+                value="Theory"
+                required>
+            <label class="radio-option" for="theory">Theory</label>
+
+            <input
+                type="radio"
+                id="lab"
+                name="class_type"
+                value="Lab">
+            <label class="radio-option" for="lab">Lab</label>
+
+            <br><br>
+
+           
+            <label for="day">Day:</label>
+            <select id="day" name="day" required>
+                <option value="">Select a day</option>
+                <option value="Sunday">Sunday</option>
+                <option value="Tuesday">Tuesday</option>
+                <option value="Thursday">Thursday</option>
+            </select>
+
+          <br><br>
+
+            <label for="comments">Comments:</label>
+            <textarea
+                id="comments"
+                name="comments"
+                minlength="10"
+                required>
+            </textarea>
+
+            <br><br>
+            
+            <button type="submit">Send Feedback</button>
+
+        </fieldset>
+    </form>
+
+
+
+
+
+</body>
+</html>
